@@ -21,7 +21,7 @@ const Header = () => {
         href={""}
       >
         <div className="w-2 h-2 rounded-full bg-magenta "></div>
-        Let's talk
+        Let&quot;s talk
       </Link>
     </header>
   );
