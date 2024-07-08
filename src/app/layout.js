@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-import Header from "@/components/Navigation/Header";
-import Footer from "@/components/Navigation/Footer";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 const satoshi = localFont({
   src: "./fonts/Satoshi-Medium.woff2",
@@ -24,7 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${satoshi.variable} ${erode.variable}`}>
+      <body
+        className={`${satoshi.variable} ${erode.variable} font-satoshi text-sm underline-offset-4 leading-[0.75] text-white`}
+      >
         <Header />
         {children}
         <Footer />
