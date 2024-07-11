@@ -1,8 +1,11 @@
+import ProjectsList from "../projects/ProjectsList";
+
 function Projects() {
   return (
     <>
-      <section className="w-full h-[1000px] bg-white text-blue">
+      <section className="w-full py-5 bg-white text-blue">
         <h2 className="p-5">Projects</h2>
+        <ProjectsList />
       </section>
     </>
   );

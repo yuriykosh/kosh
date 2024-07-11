@@ -1,11 +1,13 @@
-import Hero from "@/components/home-page/Hero";
-import Projects from "@/components/home-page/Projects";
+import CommentSection from "@/components/CommentSection";
+import HeroSection from "@/components/home-page/HeroSection";
+import ProjectsSection from "@/components/home-page/ProjectsSection";
 
 export default function Home() {
   return (
     <main className="pt-20">
-      <Hero />
-      <Projects />
+      <HeroSection />
+      <ProjectsSection />
+      <CommentSection />
     </main>
   );
 }

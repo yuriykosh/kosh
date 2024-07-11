@@ -9,21 +9,15 @@ function Hero() {
         <h1 className="sr-only">
           KOSH - Digital-first Design and Development Studio
         </h1>
-        <div className="flex flex-col bg-none">
-          <div className="block w-full h-20 bg-blue"></div>
+        <div className="relative flex flex-col bg-none">
+          <div className="block w-full h-20 bg-blue after:content-[''] after:block after:absolute after:-bottom-[1px] after:bg-blue after:h-[2px] after:w-full "></div>
           <Image
             src={koshPic}
             style={{ maxWidth: "100%", height: "auto" }}
-            alt="Picture of the author"
-          />
-          <Image
-            src={homeBG}
-            style={{ maxWidth: "100%", height: "auto" }}
-            alt="Picture of the author"
-            className="fixed top-52 z-[-1] scale-150"
+            alt="Logo of KOSH Studio"
           />
         </div>
-        <div className="flex gap-[480px] w-full flex-col -translate-y-[1px]">
+        <div className="flex gap-[480px] w-full flex-col">
           <p className="px-5 py-8 text-xl text-white bg-blue font-erode">
             We work with brands to craft digital solutions, strategically make
             the right things, and just build fun stuff. We&#39;re a
@@ -43,6 +37,12 @@ function Hero() {
             </ul>
           </div>
         </div>
+        <Image
+          src={homeBG}
+          style={{ maxWidth: "100%", height: "auto" }}
+          alt="Background picture of concrete stairs"
+          className="fixed top-52 z-[-1] scale-150"
+        />
       </section>
     </>
   );

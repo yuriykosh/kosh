@@ -11,3 +11,57 @@ body {
     text-wrap: balance;
   }
 }
+
+.polygon {
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+}
+
+.transition-height {
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+  max-height: 5.6rem; /* Approximate height for 4 lines */
+}
+
+.transition-height.expanded {
+  max-height: 1000px; /* Large enough to show the full content */
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px #2c37cd;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 1024px) {
+  .text-stroke {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* .text-stroke {
+  -webkit-text-stroke: 1px rgba($color: #ffffff, $alpha: 0.8);
+  -webkit-text-fill-color: black;
+
+  @media (min-width: 1024px) {
+    -webkit-text-stroke: 1px rgba($color: #ffffff, $alpha: 0.8);
+    -webkit-text-fill-color: transparent;
+  } */
+
+/* button:hover > & {
+    @media (min-width: 1024px) {
+      -webkit-text-stroke: 1px rgba($color: #000000, $alpha: 1);
+      -webkit-text-fill-color: black;
+    }
+  }
+  button:focus > & {
+    @media (min-width: 1024px) {
+      -webkit-text-stroke: 1px rgba($color: #000000, $alpha: 1);
+      -webkit-text-fill-color: black;
+    }
+  }
+  button:active > & {
+    @media (min-width: 1024px) {
+      -webkit-text-stroke: 1px rgba($color: #000000, $alpha: 1);
+      -webkit-text-fill-color: black;
+    }
+  } */
+/* } */
