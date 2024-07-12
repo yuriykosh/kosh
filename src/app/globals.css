@@ -16,6 +16,10 @@ body {
   clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
 }
 
+.screen-height {
+  height: calc(100vh - 80px);
+}
+
 .transition-height {
   transition: max-height 0.5s ease-in-out;
   overflow: hidden;
@@ -26,10 +30,20 @@ body {
   max-height: 1000px; /* Large enough to show the full content */
 }
 
-.text-stroke {
+.text-stroke--blue {
   -webkit-text-stroke: 1px #2c37cd;
   -webkit-text-fill-color: transparent;
 }
+.text-stroke--white {
+  -webkit-text-stroke: 1px #dbd5c6;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-stroke--magenta {
+  -webkit-text-stroke: 1px #d023ea;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (min-width: 1024px) {
   .text-stroke {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);

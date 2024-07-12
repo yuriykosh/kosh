@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-10 border-t border-white bg-blue">
+    <footer className="flex flex-col gap-10 border-white border-y bg-blue">
       <div className="flex flex-col gap-10 border-b border-white">
         <nav>
           <div className="p-5 border-b border-white">Menu:</div>
@@ -13,23 +13,23 @@ const Footer = () => {
             <li>
               <Link
                 href={"/"}
-                className="flex gap-5 align-center text-[5.625rem] leading-none tracking-[-0.169rem] before:block before:border before:rounded-full before:border-white before:w-10 before:h-10 before:my-auto"
+                className="flex gap-2 align-center text-[5.625rem] text-transparent text-stroke--white leading-none tracking-[-0.169rem] before:block before:mr-3 before:border before:rounded-full before:border-white before:w-10 before:h-10 before:my-auto"
               >
                 Home
               </Link>
             </li>
             <li>
               <Link
-                href={"/"}
-                className="flex gap-5 align-center text-[5.625rem] leading-none tracking-[-0.169rem] before:block before:border before:rounded-full before:border-white before:w-10 before:h-10 before:my-auto after:content-['(03...)'] after:text-sm after:-tracking-tight"
+                href={"/#services"}
+                className="flex gap-2 align-center text-[5.625rem] leading-none tracking-[-0.169rem] before:block before:mr-3 before:border before:rounded-full before:border-white before:w-10 before:h-10 before:my-auto"
               >
-                Work
+                Work<sup className="text-sm -tracking-tight">(03...)</sup>
               </Link>
             </li>
             <li>
               <Link
-                href={"/"}
-                className="flex gap-5 align-center text-[5.625rem] leading-none tracking-[-0.169rem] before:block before:border before:rounded-full before:border-white before:w-10 before:h-10 before:my-auto"
+                href={"/studio"}
+                className="flex gap-2 align-center text-[5.625rem] leading-none tracking-[-0.169rem] before:block before:mr-3 before:border before:rounded-full before:border-white before:w-10 before:h-10 before:my-auto"
               >
                 Studio
               </Link>

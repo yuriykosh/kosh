@@ -10,7 +10,7 @@ function Hero() {
           KOSH - Digital-first Design and Development Studio
         </h1>
         <div className="relative flex flex-col bg-none">
-          <div className="block w-full h-20 bg-blue after:content-[''] after:block after:absolute after:-bottom-[1px] after:bg-blue after:h-[2px] after:w-full "></div>
+          <div className="block w-full h-40 bg-blue after:content-[''] after:block after:absolute after:-bottom-[1px] after:bg-blue after:h-[2px] after:w-full "></div>
           <Image
             src={koshPic}
             style={{ maxWidth: "100%", height: "auto" }}
@@ -23,7 +23,10 @@ function Hero() {
             the right things, and just build fun stuff. We&#39;re a
             digital-first design &amp; development studio.
           </p>
-          <div className="flex flex-col w-full text-white bg-blue">
+          <div
+            id="services"
+            className="flex flex-col w-full text-white bg-blue"
+          >
             <h2 className="flex p-5 border-b">Services:</h2>
 
             <ul className="flex flex-col gap-2 p-5">

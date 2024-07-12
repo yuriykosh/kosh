@@ -35,7 +35,7 @@ function ProjectsList() {
         {projects.map((project) => (
           <ProjectItem key={project.id} project={project} />
         ))}
-        <li className="flex flex-col gap-[0.875rem] px-[0.625rem] py-5 text-[2.125rem] leading-10 border border-blue text-stroke text-transparent">
+        <li className="flex flex-col gap-[0.875rem] px-[0.625rem] py-5 text-[2.125rem] leading-10 border border-blue text-stroke--blue text-transparent">
           <ul className="flex gap-5">
             <li className="w-5 h-5 border border-transparent rounded-full bg-magenta"></li>
             <li className="w-5 h-5 border border-transparent rounded-full bg-blue"></li>
