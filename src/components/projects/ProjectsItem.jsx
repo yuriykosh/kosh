@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 function ProjectItem({ project }) {
+  // EXPND/HIDE
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggle = () => {
@@ -33,14 +34,7 @@ function ProjectItem({ project }) {
           >
             {project.description}
           </p>
-          {/* <p
-            className={`text-xl font-erode ${styles.transitionHeight} ${
-              isExpanded ? styles.expanded : ""
-            }`}
-          >
-            {project.description}
-          </p> */}
-          {/* <button className="flex underline">expand</button> */}
+
           <button onClick={handleToggle} className="flex underline">
             {isExpanded ? "hide" : "expand"}
           </button>

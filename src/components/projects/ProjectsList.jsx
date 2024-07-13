@@ -31,11 +31,11 @@ function ProjectsList() {
 
   return (
     <>
-      <ul className="flex flex-col w-full gap-5 px-5 pb-5 ">
+      <ul className="flex flex-col flex-wrap w-full gap-5 px-5 pb-5 md:grid md:grid-cols-2">
         {projects.map((project) => (
           <ProjectItem key={project.id} project={project} />
         ))}
-        <li className="flex flex-col gap-[0.875rem] px-[0.625rem] py-5 text-[2.125rem] leading-10 border border-blue text-stroke--blue text-transparent">
+        <li className="flex flex-col gap-[0.875rem] px-[0.625rem] py-5 text-[2.125rem] leading-10 border border-blue text-stroke--blue text-transparent md:h-fit">
           <ul className="flex gap-5">
             <li className="w-5 h-5 border border-transparent rounded-full bg-magenta"></li>
             <li className="w-5 h-5 border border-transparent rounded-full bg-blue"></li>
