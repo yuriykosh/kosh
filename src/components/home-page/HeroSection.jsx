@@ -20,7 +20,7 @@ function Hero() {
           />
         </div>
 
-        <div className="flex gap-[480px] w-full flex-col md:gap-0 md:flex-row mb-[526px] md:justify-stretch  lg:flex-col-reverse lg:gap-[277px] lg:bg-blue lg:pt-20 lg:flex-none lg:w-[521px]">
+        <div className="flex gap-[480px] w-full flex-col md:gap-0 md:flex-row md:mb-[526px] md:justify-stretch  lg:flex-col-reverse lg:gap-[277px] lg:bg-blue lg:pt-20 lg:flex-none lg:w-[521px]">
           <div className="flex px-5 py-8 text-xl text-white bg-blue font-erode md:w-2/5 lg:w-full">
             <p className="self-end">
               We work with brands to craft digital solutions, strategically make

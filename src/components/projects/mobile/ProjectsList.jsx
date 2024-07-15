@@ -1,4 +1,5 @@
 import eventPOSpic from "/public/projects/1.png";
+import dfpic from "/public/projects/3.png";
 import ProjectItem from "./ProjectsItem";
 
 function ProjectsList() {
@@ -9,7 +10,7 @@ function ProjectsList() {
       image: eventPOSpic,
       link: "/",
       description:
-        "A cutting-edge mobile payment application meticulously crafted to cater specifically to the unique demands of events. In the era where seamless transactions and efficient management are paramount, EventPOS revolutionises the way of payments are processed and tracked in event environment.",
+        "A cutting-edge mobile payment application meticulously crafted to cater specifically to the unique demands of events. In the era where seamless transactions and efficient management are paramount, EventPOS revolutionizes the way of payments are processed and tracked in event environment.",
     },
     {
       id: "2",
@@ -17,21 +18,22 @@ function ProjectsList() {
       image: eventPOSpic,
       link: "/",
       description:
-        "A cutting-edge mobile payment application meticulously crafted to cater specifically to the unique demands of events. In the era where seamless transactions and efficient management are paramount, EventPOS revolutionises the way of payments are processed and tracked in event environment.",
+        "A cutting-edge mobile payment application meticulously crafted to cater specifically to the unique demands of events. In the era where seamless transactions and efficient management are paramount, EventPOS revolutionizes the way of payments are processed and tracked in event environment.",
     },
     {
       id: "3",
       name: "DF Druckluft-Fachhandel",
-      image: eventPOSpic,
+      image: dfpic,
       link: "/",
       description:
-        "A cutting-edge mobile payment application meticulously crafted to cater specifically to the unique demands of events. In the era where seamless transactions and efficient management are paramount, EventPOS revolutionises the way of payments are processed and tracked in event environment.",
+        "A cutting-edge mobile payment application meticulously crafted to cater specifically to the unique demands of events. In the era where seamless transactions and efficient management are paramount, EventPOS revolutionizes the way of payments are processed and tracked in event environment.",
     },
   ];
 
   return (
     <>
-      <ul className="flex flex-col flex-wrap w-full gap-5 px-5 pb-5 md:grid md:grid-cols-2">
+      <h2 className="p-5 lg:hidden">Projects</h2>
+      <ul className="flex flex-col flex-wrap w-full gap-5 px-5 pb-5 md:grid md:grid-cols-2 lg:hidden">
         {projects.map((project) => (
           <ProjectItem key={project.id} project={project} />
         ))}

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 function ProjectItem({ project }) {
-  // EXPND/HIDE
+  // EXPAND/HIDE
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggle = () => {

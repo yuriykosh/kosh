@@ -20,6 +20,12 @@ body {
   height: calc(100vh - 80px);
 }
 
+@media (min-width: 1024px) {
+  .lg-screen-height {
+    height: calc(100vh - 80px);
+  }
+}
+
 .custom-w {
   width: calc((100% - 20px) / 2);
 }
