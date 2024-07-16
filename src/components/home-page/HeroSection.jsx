@@ -20,8 +20,8 @@ function Hero() {
           />
         </div>
 
-        <div className="flex gap-[480px] w-full flex-col md:gap-0 md:flex-row md:mb-[526px] md:justify-stretch  lg:flex-col-reverse lg:gap-[277px] lg:bg-blue lg:pt-20 lg:flex-none lg:w-[521px]">
-          <div className="flex px-5 py-8 text-xl text-white bg-blue font-erode md:w-2/5 lg:w-full">
+        <div className="flex gap-[480px] w-full flex-col md:gap-0 md:flex-row md:mb-[526px] md:justify-stretch  lg:flex-col-reverse lg:gap-[277px] lg:bg-blue lg:pt-20 lg:flex-none lg:w-[521px] xl:w-[649px] 2xl:w-[729px]">
+          <div className="flex px-5 py-8 text-xl text-white bg-blue font-erode md:w-2/5 lg:w-full xl:text-[26px] xl:leading-[32px]">
             <p className="self-end">
               We work with brands to craft digital solutions, strategically make
               the right things, and just build fun stuff. We&#39;re a
@@ -49,9 +49,10 @@ function Hero() {
 
         <Image
           src={homeBG}
+          quality={100}
           style={{ maxWidth: "100%", height: "auto" }}
           alt="Background picture of concrete stairs"
-          className="fixed top-52 z-[-1] scale-150 md:scale-110 md:top-20"
+          className="fixed top-52 z-[-1] scale-150 md:scale-110 md:top-20 xl:scale-100"
         />
       </section>
     </>

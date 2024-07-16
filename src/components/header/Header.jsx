@@ -45,6 +45,7 @@ const Header = () => {
             src="/logo.svg"
             width={40}
             height={40}
+            quality={100}
             alt="KOSH Studio short logo"
           />
         </Link>

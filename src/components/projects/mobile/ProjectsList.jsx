@@ -26,7 +26,7 @@ function ProjectsList() {
       image: dfpic,
       link: "/",
       description:
-        "A cutting-edge mobile payment application meticulously crafted to cater specifically to the unique demands of events. In the era where seamless transactions and efficient management are paramount, EventPOS revolutionizes the way of payments are processed and tracked in event environment.",
+        "E-commerce for complete compressed air solutions (a part of Atlas Copco Group)",
     },
   ];
 

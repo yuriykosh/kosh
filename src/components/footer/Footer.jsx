@@ -2,6 +2,9 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import NavItemActive from "./nav-item/NavItemActive";
+import NavItem from "./nav-item/NavItem";
+import NavItemDropdownlist from "./nav-item/NavItemDropdownlist";
 
 const Footer = () => {
   return (
@@ -11,28 +14,31 @@ const Footer = () => {
           <div className="p-5 border-b border-white">Menu:</div>
           <ul className="flex flex-col gap-8 p-5 ">
             <li>
-              <Link
+              {/* <Link
                 href={"/"}
                 className="flex gap-2 align-center text-[5.625rem] lg:text-[10rem] text-transparent text-stroke--white leading-[80%] tracking-[-0.169rem] before:block before:mr-3 before:border before:rounded-full before:border-white before:w-10 before:h-10 before:my-auto"
               >
                 Home
-              </Link>
+              </Link> */}
+              <NavItemActive>Home</NavItemActive>
             </li>
             <li>
-              <Link
-                href={"/#services"}
+              {/* <Link
+                href={"/#projects"}
                 className="flex gap-2 align-center text-[5.625rem] lg:text-[10rem] leading-[75%] tracking-[-0.169rem] before:block before:mr-3 before:border before:rounded-full before:border-white before:w-10 before:h-10 before:my-auto"
               >
                 Work<sup className="text-sm -tracking-tight">(03...)</sup>
-              </Link>
+              </Link> */}
+              <NavItemDropdownlist />
             </li>
             <li>
-              <Link
+              {/* <Link
                 href={"/studio"}
                 className="flex gap-2 align-center text-[5.625rem] lg:text-[10rem] leading-[75%] tracking-[-0.169rem] before:block before:mr-3 before:border before:rounded-full before:border-white before:w-10 before:h-10 before:my-auto"
               >
                 Studio
-              </Link>
+              </Link> */}
+              <NavItem>Studio</NavItem>
             </li>
           </ul>
         </nav>
@@ -92,7 +98,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="p-5 md:self-end md:w-2/5 lg:w-1/3">
+        <div className="p-5 md:self-end md:w-2/5 lg:w-1/3 xl:w-3/12">
           <p>&copy; KOSH—All rights reserved. 2024</p>
         </div>
       </div>

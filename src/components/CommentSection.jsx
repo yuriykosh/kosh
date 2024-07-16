@@ -23,7 +23,7 @@ const CommentSection = () => {
   // };
 
   return (
-    <section className="flex flex-col w-full gap-32 py-5 bg-blue">
+    <section className="flex flex-col w-full gap-32 py-5 2xl:gap-52 bg-blue">
       <div className="flex flex-col p-5 text-[2.125rem] xl:text-[3.313rem] leading-none">
         <div
           // ref={body}
