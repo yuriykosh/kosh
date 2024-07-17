@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-const NavItem = ({ children }) => {
+const NavItem = ({ url, children }) => {
   let lowercaseChildren = `/${children.toLowerCase()}`;
 
   return (
     <>
       <Link
-        href={lowercaseChildren}
+        href={url}
         className="
         flex gap-2 align-center text-[5.625rem] lg:text-[10rem] leading-[75%] tracking-[-0.169rem] hover:gap-5
         transition-all duration-300

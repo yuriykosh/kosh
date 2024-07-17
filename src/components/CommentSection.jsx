@@ -1,10 +1,16 @@
 "use client";
 
 import { useRef } from "react";
-
+import { usePathname } from "next/navigation";
 import { useInView, motion } from "framer-motion";
 
 const CommentSection = () => {
+  const pathname = usePathname();
+
+  let sectionBG = pathname === "/studio" ? "bg-white" : "bg-blue";
+  let sectionTextColor = pathname === "/studio" ? "text-blue" : "";
+  let polygonBG = pathname === "/studio" ? "bg-blue" : "bg-white";
+
   // const body = useRef(null);
 
   // const isInView = useInView(body, { once: true, margin: "-75%" });
@@ -23,7 +29,9 @@ const CommentSection = () => {
   // };
 
   return (
-    <section className="flex flex-col w-full gap-32 py-5 2xl:gap-52 bg-blue">
+    <section
+      className={`flex flex-col w-full gap-32 2xl:gap-52 ${sectionBG} ${sectionTextColor}`}
+    >
       <div className="flex flex-col p-5 text-[2.125rem] xl:text-[3.313rem] leading-none">
         <div
           // ref={body}
@@ -40,7 +48,7 @@ const CommentSection = () => {
         </div>
       </div>
       <div className="flex justify-end p-5">
-        <div className="w-16 h-16 bg-white polygon xl:w-20 xl:h-20"></div>
+        <div className={`w-16 h-16 ${polygonBG} polygon xl:w-20 xl:h-20`}></div>
       </div>
     </section>
   );

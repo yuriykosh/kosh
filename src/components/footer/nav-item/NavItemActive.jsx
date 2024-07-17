@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const NavItemActive = ({ children }) => {
+const NavItemActive = ({ url, children }) => {
   return (
     <>
       <Link

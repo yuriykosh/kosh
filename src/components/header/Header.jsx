@@ -4,60 +4,68 @@ import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 import NavList from "./navigation/NavList";
 import DotAccent from "../assets/DotAccent";
+import logoWhite from "/public/logo.svg";
+import logoBlue from "/public/logo--blue.svg";
 import closeIconBlue from "/public/close-blue.svg";
 import closeIconWhite from "/public/close-white.svg";
+import WaffleMenu from "../assets/WaffleMenu";
 
 const Header = () => {
-  const container = useRef();
   const [isActive, setIsActive] = useState(false);
+  const pathname = usePathname();
+  const container = useRef();
 
+  // logo logic
+  let logo = pathname === "/studio" ? logoBlue : logoWhite;
+
+  // toggle mobile menu
   const toggleMenu = () => {
     setIsActive(!isActive);
   };
 
   return (
-    <header className="fixed z-10 flex flex-row justify-between w-full h-20 border-white border-y bg-blue">
+    <header
+      className={`fixed z-10 flex flex-row justify-between w-full h-20 ${
+        pathname === "/studio"
+          ? "border-blue bg-white"
+          : "border-white  bg-blue"
+      } border-y transition-all duration-300`}
+    >
       <div className="flex">
-        <div
+        <WaffleMenu
           onClick={toggleMenu}
-          className={`${
-            isActive
-              ? " -translate-x-12"
-              : "flex flex-col items-center justify-center"
-          }  h-full gap-2 px-5 border-r border-white lg:hidden`}
-        >
-          <ul className="flex gap-[22px]">
-            <li className="w-2.5 h-2.5 border border-white rounded-full"></li>
-            <li className="w-2.5 h-2.5 border border-white rounded-full"></li>
-          </ul>
-          <ul className="flex gap-[22px]">
-            <li className="w-2.5 h-2.5 border border-white rounded-full"></li>
-            <li className="w-2.5 h-2.5 border border-white rounded-full"></li>
-          </ul>
-        </div>
+          isActive={isActive}
+          pathname={pathname}
+        />
         <Link
           className="items-center justify-center hidden pl-5 sm:flex"
           href={"/"}
         >
           <Image
-            src="/logo.svg"
+            src={logo}
             width={40}
             height={40}
             quality={100}
             alt="KOSH Studio short logo"
+            className="transition-all duration-300"
           />
         </Link>
       </div>
 
       {/* DESKTOP NAVIGATION */}
       <nav className="hidden lg:flex lg:justify-end lg:w-[522px] xl:w-[650px] 2xl:w-[730px]">
-        <NavList />
+        <NavList pathname={pathname} />
       </nav>
 
       <Link
-        className="flex items-center justify-center gap-2.5 w-[129px] md:w-[207px] lg:hidden border-l border-white bg-white text-blue px-5 underline underline-offset-4"
+        className={`flex items-center justify-center gap-2.5 w-[129px] md:w-[207px] lg:hidden border-l  px-5 underline underline-offset-4 ${
+          pathname === "/studio"
+            ? " bg-blue"
+            : "border-l border-white bg-white text-blue"
+        } transition-all duration-300`}
         href={""}
       >
         <DotAccent />
@@ -74,7 +82,12 @@ const Header = () => {
           onClick={toggleMenu}
           className="absolute left-0 flex flex-col items-center justify-center p-5 pb-[18px] bg-white border-r -top-20 border-blue lg:hidden"
         >
-          <Image src={closeIconBlue} width={42} height={28} />
+          <Image
+            src={closeIconBlue}
+            width={42}
+            height={28}
+            alt="Button to close mobile menu"
+          />
         </div>
         <nav>
           <div className="p-5 border-y border-blue">Menu:</div>

@@ -44,6 +44,10 @@ body {
   -webkit-text-stroke: 1px #2c37cd;
   -webkit-text-fill-color: transparent;
 }
+.text-stroke--blue-sm {
+  -webkit-text-stroke: 0.5px #2c37cd;
+  -webkit-text-fill-color: transparent;
+}
 .text-stroke--white {
   -webkit-text-stroke: 1px #dbd5c6;
   -webkit-text-fill-color: transparent;
