@@ -56,7 +56,10 @@ const Header = () => {
       </div>
 
       {/* DESKTOP NAVIGATION */}
-      <nav className="hidden lg:flex lg:justify-end lg:w-[522px] xl:w-[650px] 2xl:w-[730px]">
+      {/* <nav className="hidden lg:flex lg:justify-end lg:w-[522px] xl:w-[650px] 2xl:w-[730px]">
+        <NavList pathname={pathname} />
+      </nav> */}
+      <nav className="hidden lg:flex lg:justify-end lg:w-6/12">
         <NavList pathname={pathname} />
       </nav>
 

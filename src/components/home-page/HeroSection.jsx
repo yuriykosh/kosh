@@ -11,7 +11,7 @@ function Hero() {
           KOSH - Digital-first Design and Development Studio
         </h1>
 
-        <div className="relative flex flex-col bg-none lg:flex-grow lg:border-r lg:border-white lg:h-[606px]">
+        <div className="relative flex flex-col bg-none lg:flex-grow lg:h-[606px]">
           <div className="block w-full h-40  bg-blue after:content-[''] after:block after:absolute after:-bottom-[1px] after:bg-blue after:h-[2px] after:w-full md:after:h-px md:after:bottom-0 lg:h-full"></div>
           <Image
             src={koshPic}
@@ -20,7 +20,7 @@ function Hero() {
           />
         </div>
 
-        <div className="flex gap-[480px] w-full flex-col md:gap-0 md:flex-row md:mb-[526px] md:justify-stretch  lg:flex-col-reverse lg:gap-[277px] lg:bg-blue lg:pt-20 lg:flex-none lg:w-[521px] xl:w-[649px] 2xl:w-[729px]">
+        <div className="flex gap-[480px] w-full flex-col md:gap-0 md:flex-row md:mb-[526px] md:justify-stretch  lg:flex-col-reverse lg:gap-[277px] lg:bg-blue lg:border-l lg:border-white lg:pt-20 lg:flex-none lg:w-6/12">
           <div className="flex px-5 py-8 text-xl text-white bg-blue font-erode md:w-2/5 lg:w-full xl:text-[26px] xl:leading-[32px]">
             <p className="self-end">
               We work with brands to craft digital solutions, strategically make

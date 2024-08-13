@@ -5,8 +5,8 @@ import koshPic from "/public/KOSH-blue.svg";
 const HeroSection = () => {
   return (
     <section className="pt-20 bg-white text-blue">
-      <div className="flex flex-col border-b border-blue">
-        <div className="flex flex-col">
+      <div className="flex flex-col border-b border-blue md:flex-row lg:h-[496px] xl:h-[560px] 2xl:h-[528px]">
+        <div className="flex flex-col lg:w-full">
           <div className="flex items-baseline justify-between p-5 border-b border-blue">
             <p>about</p>
             {/* <div className=""> */}
@@ -20,7 +20,7 @@ const HeroSection = () => {
           <div className="h-[60vh] overflow-hidden md:hidden">
             <Image src={studioPic} alt="bla bla" className="" />
           </div>
-          <div className="flex px-5 py-10 text-xl text-blue bg-white font-erode xl:text-[26px] xl:leading-[32px]">
+          <div className="flex md:h-full px-5 py-10 text-xl text-blue bg-white font-erode xl:text-[26px] xl:leading-[32px]">
             <p className="self-end">
               At KOSH, we blend creativity with technology to deliver innovative
               digital solutions.We believe in leveraging design and technology
@@ -30,8 +30,8 @@ const HeroSection = () => {
             </p>
           </div>
         </div>
-        <div className="hidden md:block">
-          <Image src={studioPic} alt="bla bla" />
+        <div className="hidden overflow-hidden md:block lg:flex-none lg:w-6/12 lg:border-l lg:border-blue">
+          <Image src={studioPic} alt="bla bla" className="" />
         </div>
       </div>
     </section>

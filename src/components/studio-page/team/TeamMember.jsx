@@ -7,7 +7,7 @@ const TeamMember = ({ member }) => {
       <Image
         src={member.image}
         alt={`${member.name} picture`}
-        className="object-cover w-auto border-b border-blue h-80 mix-blend-luminosity"
+        className="object-cover w-auto border-b border-blue h-80 md:h-[356px] lg:h-[499px] mix-blend-luminosity"
       />
       <div className="flex flex-col gap-1 px-[10px] py-5">
         {member.link === "" ? (

@@ -43,7 +43,7 @@ function ProjectsList() {
         {hoveredProject && <ProjectImage project={hoveredProject} />}
       </div>
 
-      <div className="hidden lg:flex flex-col flex-none gap-36 w-[522px] xl:w-[650px] 2xl:w-[730px] border-l border-blue p-5">
+      <div className="flex-col flex-none hidden w-6/12 p-5 border-l lg:flex gap-36 border-blue">
         <h2>Projects</h2>
 
         <div className="flex flex-col gap-20 grow xl:gap-0">

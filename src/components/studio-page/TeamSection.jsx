@@ -30,14 +30,14 @@ const TeamSection = () => {
   return (
     <section className="pb-32">
       <div className="flex gap-2 p-5 border-b border-white">
-        <h2>Meet our team:</h2>
+        <h2 className="md:pt-1.5 md:pb-1">Meet our team:</h2>
       </div>
-      <ul className="grid grid-cols-2 gap-x-[10px] gap-y-5 p-5 border-b border-white">
+      <ul className="grid grid-cols-2 md:grid-cols-3 md:gap-5 gap-x-[10px] gap-y-5 p-5 border-b border-white">
         {team.map((member) => (
           <TeamMember key={member.id} member={member} />
         ))}
       </ul>
-      <div className="flex flex-col gap-8 mt-5 p-5 text-xl font-erode xl:text-[26px] xl:leading-[32px]">
+      <div className="flex flex-col md:w-8/12 md:ml-auto md:mt-0 gap-8 mt-5 p-5 text-xl font-erode xl:text-[26px] xl:leading-[32px]">
         <p>
           Our team embodies a meticulous and thoughtful approach to every
           project. We continuously distill ideas to convey complex concepts

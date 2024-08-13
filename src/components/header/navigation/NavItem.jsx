@@ -6,7 +6,7 @@ const NavItem = ({ url, text, pathname }) => {
     <>
       <li className="flex items-stretch justify-center w-full">
         <Link
-          className={`flex justify-center items-center gap-2.5  w-full border-l px-5 ${
+          className={`flex justify-center items-center gap-2.5 w-full border-l px-5 group ${
             pathname === "/studio"
               ? "border-blue bg-white text-blue"
               : "border-white bg-blue"
@@ -20,10 +20,10 @@ const NavItem = ({ url, text, pathname }) => {
               pathname === "/studio"
                 ? `${
                     url === "/studio"
-                      ? "bg-transparent border border-blue"
-                      : "bg-blue"
+                      ? "bg-blue border-none"
+                      : "bg-transparent border border-blue group-hover:bg-blue transition-all"
                   }`
-                : "bg-white"
+                : "bg-transparent border border-white group-hover:bg-white transition-all"
             }
           />
           {text}
