@@ -15,7 +15,7 @@ function ProjectsList() {
       id: "1",
       name: "EventPOS",
       image: eventPOSpic,
-      link: "/",
+      link: "#projects",
       description:
         "A cutting-edge mobile payment application meticulously crafted to cater specifically to the unique demands of events. In the era where seamless transactions and efficient management are paramount, EventPOS revolutionizes the way of payments are processed and tracked in event environment.",
     },
@@ -23,17 +23,17 @@ function ProjectsList() {
       id: "2",
       name: "Budivelnyk",
       image: eventPOSpic,
-      link: "/",
+      link: "#projects",
       description:
-        "A cutting-edge mobile payment application meticulously crafted to cater specifically to the unique demands of events. In the era where seamless transactions and efficient management are paramount, EventPOS revolutionizes the way of payments are processed and tracked in event environment.",
+        "A construction supplies and tools store, expanded its market reach by implementing a robust brand strategy that strengthened its industry presence. A redesigned website further enhanced user experience, driving higher traffic and sales conversions.",
     },
     {
       id: "3",
       name: "DF Druckluft-Fachhandel",
       image: dfpic,
-      link: "/",
+      link: "#projects",
       description:
-        "E-commerce for complete compressed air solutions (a part of Atlas Copco Group)",
+        "A leading e-commerce platform specializing in comprehensive compressed air solutions. After leading migration to the Atlas Copco Group, the company successfully optimized its user experience, system processes and numbers.",
     },
   ];
 

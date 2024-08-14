@@ -6,10 +6,8 @@ const WaffleMenu = ({ onClick, isActive, pathname }) => {
       <div
         onClick={onClick}
         className={`${
-          isActive
-            ? " -translate-x-12"
-            : "flex flex-col items-center justify-center"
-        }  h-full gap-2 px-5 border-r ${borderColor} lg:hidden`}
+          isActive ? "opacity-0" : " opacity-100"
+        } flex flex-col items-center justify-center h-full gap-2 px-5 border-r cursor-pointer ${borderColor} lg:hidden`}
       >
         <ul className="flex gap-[22px]">
           <WaffleMenuDot borderColor={borderColor} />
