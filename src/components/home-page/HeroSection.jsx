@@ -17,12 +17,13 @@ function Hero() {
             src={koshPic}
             style={{ maxWidth: "100%", height: "auto" }}
             alt="Logo of KOSH Studio with transparent background"
+            className="animate-koshHome"
           />
         </div>
 
         <div className="flex gap-[480px] w-full flex-col md:gap-0 md:flex-row md:mb-[526px] md:justify-stretch  lg:flex-col-reverse lg:gap-[277px] lg:bg-blue lg:border-l lg:border-white lg:pt-20 lg:flex-none lg:w-6/12">
           <div className="flex px-5 py-8 text-xl text-white bg-blue font-erode md:w-2/5 lg:w-full xl:text-[26px] xl:leading-[32px]">
-            <p className="self-end">
+            <p className="self-end animate-slidein [--slidein-delay:750ms] opacity-0">
               We work with brands to craft digital solutions, strategically make
               the right things, and just build fun stuff. We&#39;re a
               digital-first design &amp; development studio.
@@ -33,9 +34,16 @@ function Hero() {
             id="services"
             className="flex flex-col w-full text-white bg-blue md:w-auto md:grow md:border-l md:border-t md:border-white lg:border-t-0 lg:border-l-0"
           >
-            <h2 className="flex p-5 border-b">Services:</h2>
+            <h2 className="flex p-5 border-b ">
+              <span className="animate-slidein [--slidein-delay:350ms] opacity-0">
+                Services:
+              </span>
+            </h2>
 
-            <ul className="flex flex-col gap-2 p-5">
+            <ul
+              className="flex flex-col gap-2 p-5
+                          animate-slidein [--slidein-delay:550ms] opacity-0"
+            >
               <li>Design</li>
               <li>Development</li>
               <li>Digital strategy</li>
@@ -50,6 +58,8 @@ function Hero() {
         <Image
           src={homeBG}
           quality={100}
+          loading="lazy"
+          placeholder="blur"
           style={{ maxWidth: "100%", height: "auto" }}
           alt="Background picture of concrete stairs"
           className="fixed top-52 z-[-1] scale-150 md:scale-110 md:top-20 xl:scale-100"

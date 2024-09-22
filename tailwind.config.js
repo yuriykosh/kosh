@@ -1,3 +1,5 @@
+const { color } = require("framer-motion");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -29,6 +31,39 @@ module.exports = {
           "0 35px 35px rgba(0, 0, 0, 0.25)",
           "0 45px 65px rgba(0, 0, 0, 0.15)",
         ],
+      },
+      keyframes: {
+        slidein: {
+          from: {
+            opacity: "0",
+            transform: "translateY(10px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        enter: {
+          from: {
+            opacity: "0",
+          },
+          to: {
+            opacity: "1",
+          },
+        },
+        koshHome: {
+          from: {
+            backgroundColor: "rgb(44 55 205)",
+          },
+          to: {
+            backgroundColor: "none",
+          },
+        },
+      },
+      animation: {
+        slidein: "slidein 375ms ease var(--slidein-delay, 0) forwards",
+        enter: "enter 350ms ease var(--enter-delay, 0) forwards",
+        koshHome: "koshHome 750ms ease forwards",
       },
     },
   },

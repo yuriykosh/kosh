@@ -37,14 +37,18 @@ const CommentSection = () => {
           // ref={body}
           className="overflow-hidden "
         >
-          <motion.p
+          {/* <motion.p
           // variants={animation}
           // initial="initial"
           // animate={isInView ? "enter" : ""}
           >
             OVER YEARS OF EXPERIENCE IN THE DESIGN INDUSTRY CRAFTING PRODUCTS
             AND DESIGN WORK FOR CLIENTS OF ALL SIZES.
-          </motion.p>
+          </motion.p> */}
+          <p className="animate-slidein [--slidein-delay:750ms] opacity-0">
+            OVER YEARS OF EXPERIENCE IN THE DESIGN INDUSTRY CRAFTING PRODUCTS
+            AND DESIGN WORK FOR CLIENTS OF ALL SIZES.
+          </p>
         </div>
       </div>
       <div className="flex justify-end p-5">

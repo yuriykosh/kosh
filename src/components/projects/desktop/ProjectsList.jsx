@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import eventPOSpic from "/public/projects/1.png";
+import budivelnykpic from "/public/projects/2.png";
 import dfpic from "/public/projects/3.png";
 import ProjectItem from "./ProjectsItem";
 import ProjectImage from "./ProjectImage";
@@ -22,7 +23,7 @@ function ProjectsList() {
     {
       id: "2",
       name: "Budivelnyk",
-      image: eventPOSpic,
+      image: budivelnykpic,
       link: "#projects",
       description:
         "A construction supplies and tools store, expanded its market reach by implementing a robust brand strategy that strengthened its industry presence. A redesigned website further enhanced user experience, driving higher traffic and sales conversions.",

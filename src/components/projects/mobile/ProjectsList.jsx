@@ -1,4 +1,5 @@
 import eventPOSpic from "/public/projects/1.png";
+import budivelnykpic from "/public/projects/2.png";
 import dfpic from "/public/projects/3.png";
 import ProjectItem from "./ProjectsItem";
 
@@ -15,7 +16,7 @@ function ProjectsList() {
     {
       id: "2",
       name: "Budivelnyk",
-      image: eventPOSpic,
+      image: budivelnykpic,
       link: "/",
       description:
         "A cutting-edge mobile payment application meticulously crafted to cater specifically to the unique demands of events. In the era where seamless transactions and efficient management are paramount, EventPOS revolutionizes the way of payments are processed and tracked in event environment.",
