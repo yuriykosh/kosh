@@ -33,10 +33,20 @@ module.exports = {
         ],
       },
       keyframes: {
-        slidein: {
+        slideinUp: {
           from: {
             opacity: "0",
             transform: "translateY(10px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        slideinDown: {
+          from: {
+            opacity: "0",
+            transform: "translateY(-10px)",
           },
           to: {
             opacity: "1",
@@ -61,8 +71,10 @@ module.exports = {
         },
       },
       animation: {
-        slidein: "slidein 375ms ease var(--slidein-delay, 0) forwards",
-        enter: "enter 350ms ease var(--enter-delay, 0) forwards",
+        slideinUp: "slideinUp 375ms ease var(--slideinUp-delay, 0) forwards",
+        slideinDown:
+          "slideinDown 375ms ease var(--slideinDown-delay, 0) forwards",
+        enter: "enter 300ms ease var(--enter-delay, 0) forwards",
         koshHome: "koshHome 750ms ease forwards",
       },
     },

@@ -6,7 +6,7 @@ const ProjectImage = ({ project }) => {
       <Image
         src={project.image}
         alt={`${project.name} picture`}
-        className="object-cover w-auto h-[751px] xl:h-[800px]"
+        className="object-cover w-auto h-[751px] xl:h-[800px] animate-enter [--enter-delay:0ms] opacity-0"
       />
     </>
   );

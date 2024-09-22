@@ -72,7 +72,7 @@ function ProjectsList() {
 
           <div className="flex flex-col justify-end gap-2 px-5 leading-6 grow">
             {hoveredProject && (
-              <p className="text-xl transition-all font-erode">
+              <p className="text-xl transition-all font-erode animate-slideinUp [--slideinUp-delay:0ms] opacity-0">
                 {hoveredProject.description}
               </p>
             )}

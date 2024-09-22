@@ -45,7 +45,7 @@ const CommentSection = () => {
             OVER YEARS OF EXPERIENCE IN THE DESIGN INDUSTRY CRAFTING PRODUCTS
             AND DESIGN WORK FOR CLIENTS OF ALL SIZES.
           </motion.p> */}
-          <p className="animate-slidein [--slidein-delay:750ms] opacity-0">
+          <p className="animate-slideinUp [--slideinUp-delay:1000ms] opacity-0">
             OVER YEARS OF EXPERIENCE IN THE DESIGN INDUSTRY CRAFTING PRODUCTS
             AND DESIGN WORK FOR CLIENTS OF ALL SIZES.
           </p>
