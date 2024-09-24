@@ -6,12 +6,12 @@ const NavList = ({ pathname }) => {
   return (
     <>
       <ul className="flex justify-center w-full">
-        <NavItem url={"/#projects"} text="Work" pathname={pathname}></NavItem>
+        <NavItem url={"/work"} text="Work" pathname={pathname}></NavItem>
         <NavItem url={"/studio"} text="Studio" pathname={pathname}></NavItem>
         <li className="flex items-stretch justify-center w-full">
           <Link
             className={`flex items-center justify-center gap-2.5 w-full px-5 underline ${
-              pathname === "/studio"
+              pathname !== "/"
                 ? " bg-blue"
                 : "border-l border-white bg-white text-blue"
             } transition-all duration-300`}

@@ -41,7 +41,7 @@ function SideNav({ isActive, toggleMenu, pathname }) {
           </li>
           <li>
             <Link
-              href={"/#services"}
+              href={"/work"}
               onClick={toggleMenu}
               className="flex gap-2 align-center text-[5.625rem] leading-none tracking-[-0.169rem] before:block before:mr-3 before:border before:rounded-full before:border-blue before:w-10 before:h-10 before:my-auto"
             >

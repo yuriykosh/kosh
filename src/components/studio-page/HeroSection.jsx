@@ -26,7 +26,6 @@ const HeroSection = () => {
               sizes="100vw"
               quality={100}
               placeholder="blur"
-              // Make the image display full width
               style={{
                 width: "100%",
                 height: "auto",

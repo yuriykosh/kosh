@@ -18,7 +18,8 @@ const Header = () => {
   const container = useRef();
 
   // logo logic
-  let logo = pathname === "/studio" ? logoBlue : logoWhite;
+  let logo =
+    pathname === "/studio" || pathname === "/work" ? logoBlue : logoWhite;
 
   // toggle mobile menu
   const toggleMenu = () => {
@@ -28,9 +29,7 @@ const Header = () => {
   return (
     <header
       className={`fixed z-10 flex flex-row justify-between w-full h-20 ${
-        pathname === "/studio"
-          ? "border-blue bg-white"
-          : "border-white  bg-blue"
+        pathname !== "/" ? "border-blue bg-white" : "border-white  bg-blue"
       } border-y transition-all duration-300`}
     >
       <div className="flex">
@@ -61,7 +60,7 @@ const Header = () => {
 
       <Link
         className={`flex items-center justify-center gap-2.5 w-[129px] md:w-[207px] lg:hidden border-l  px-5 underline underline-offset-4 ${
-          pathname === "/studio"
+          pathname === "/studio" || pathname === "/work"
             ? " bg-blue"
             : "border-l border-white bg-white text-blue"
         } transition-all duration-300`}
