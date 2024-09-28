@@ -18,8 +18,7 @@ const Header = () => {
   const container = useRef();
 
   // logo logic
-  let logo =
-    pathname === "/studio" || pathname === "/work" ? logoBlue : logoWhite;
+  let logo = pathname !== "/" ? logoBlue : logoWhite;
 
   // toggle mobile menu
   const toggleMenu = () => {
