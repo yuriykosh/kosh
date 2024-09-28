@@ -55,7 +55,7 @@ function Hero() {
           </div>
         </div>
 
-        <Image
+        {/* <Image
           src={homeBG}
           quality={100}
           loading="lazy"
@@ -63,7 +63,17 @@ function Hero() {
           style={{ maxWidth: "100%", height: "auto" }}
           alt="Background picture of concrete stairs"
           className="fixed top-52 z-[-1] scale-150 md:scale-110 md:top-20 xl:scale-100"
-        />
+        /> */}
+        <div className="fixed top-20 h-screen z-[-1] bg-red-300">
+          <video
+            className="object-cover w-full h-full mix-blend-darken"
+            loop
+            muted
+            autoPlay
+          >
+            <source src="/bubbles.mp4" />
+          </video>
+        </div>
       </section>
     </>
   );

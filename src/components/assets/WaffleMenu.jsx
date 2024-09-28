@@ -1,5 +1,5 @@
 const WaffleMenu = ({ onClick, isActive, pathname }) => {
-  let borderColor = pathname === "/studio" ? "border-blue" : "border-white";
+  let borderColor = pathname !== "/" ? "border-blue" : "border-white";
 
   return (
     <>

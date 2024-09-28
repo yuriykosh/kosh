@@ -11,7 +11,6 @@ const NavItem = ({ url, text, pathname }) => {
             className="transition-all duration-300"
             url={url}
             text={text}
-            pathname={pathname}
           />
         ) : (
           <Link

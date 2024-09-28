@@ -60,11 +60,11 @@ const Header = () => {
 
       <Link
         className={`flex items-center justify-center gap-2.5 w-[129px] md:w-[207px] lg:hidden border-l  px-5 underline underline-offset-4 ${
-          pathname === "/studio" || pathname === "/work"
-            ? " bg-blue"
+          pathname !== "/"
+            ? "bg-blue"
             : "border-l border-white bg-white text-blue"
         } transition-all duration-300`}
-        href={""}
+        href={"#footer"}
       >
         <DotAccent />
         Let&#39;s talk

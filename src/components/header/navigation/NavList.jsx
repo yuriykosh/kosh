@@ -15,7 +15,8 @@ const NavList = ({ pathname }) => {
                 ? " bg-blue"
                 : "border-l border-white bg-white text-blue"
             } transition-all duration-300`}
-            href={""}
+            href={"#footer"}
+            scroll={true}
           >
             <DotAccent />
             Let&#39;s talk

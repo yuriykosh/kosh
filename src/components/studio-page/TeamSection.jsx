@@ -1,7 +1,7 @@
 import TeamMember from "./team/TeamMember";
-import yuriyPic from "/public/team/anna.webp";
+import yuriyPic from "/public/team/yuriy.webp";
 import annaPic from "/public/team/anna.webp";
-import dmytroPic from "/public/team/anna.webp";
+import dmytroPic from "/public/team/dmytro.webp";
 
 const TeamSection = () => {
   const team = [
@@ -11,6 +11,7 @@ const TeamSection = () => {
       image: yuriyPic,
       link: "https://yuriykoshyk.com/",
       role: "(Product Designer & Founder)",
+      customStyles: "",
     },
     {
       id: "2",
@@ -18,6 +19,7 @@ const TeamSection = () => {
       image: annaPic,
       link: "",
       role: "(Art Director & Motion Designer)",
+      customStyles: "",
     },
     {
       id: "3",
@@ -25,6 +27,7 @@ const TeamSection = () => {
       image: dmytroPic,
       link: "",
       role: "(Full-stack Developer) ",
+      customStyles: "",
     },
   ];
   return (

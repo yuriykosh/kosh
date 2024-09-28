@@ -4,7 +4,7 @@ const NavItemDropdownlist = () => {
   return (
     <>
       <Link
-        href={"/#projects"}
+        href={"/work"}
         className="
         flex gap-2 align-center text-[5.625rem] lg:text-[10rem] leading-[75%] tracking-[-0.169rem] hover:gap-5
         transition-all duration-300

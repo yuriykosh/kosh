@@ -5,29 +5,39 @@ import Link from "next/link";
 import NavItemActive from "./nav-item/NavItemActive";
 import NavItem from "./nav-item/NavItem";
 import NavItemDropdownlist from "./nav-item/NavItemDropdownlist";
+import NavItemDropdownlistActive from "./nav-item/NavItemDropdownlistActive";
 
 const Footer = () => {
   const pathname = usePathname();
 
   return (
-    <footer className="relative flex flex-col gap-10 border-white border-y bg-blue">
+    <footer
+      id="footer"
+      className="relative flex flex-col gap-10 border-white border-y bg-blue"
+    >
       <div className="flex flex-col gap-10 border-b border-white md:flex-row-reverse md:gap-0">
         <nav className="md:grow">
           <div className="p-5 border-b border-white">Menu:</div>
           <ul className="flex flex-col gap-8 p-5 ">
             <li>
-              {pathname === "/" && (
+              {pathname === "/" ? (
                 <NavItemActive url={"/"}>Home</NavItemActive>
+              ) : (
+                <NavItem url={"/"}>Home</NavItem>
               )}
-              {pathname === "/studio" && <NavItem url={"/"}>Home</NavItem>}
             </li>
             <li>
-              <NavItemDropdownlist />
+              {pathname === "/work" ? (
+                <NavItemDropdownlistActive />
+              ) : (
+                <NavItemDropdownlist />
+              )}
             </li>
             <li>
-              {pathname === "/" && <NavItem url={"/studio"}>Studio</NavItem>}
-              {pathname === "/studio" && (
+              {pathname === "/studio" ? (
                 <NavItemActive url={"/studio"}>Studio</NavItemActive>
+              ) : (
+                <NavItem url={"/studio"}>Studio</NavItem>
               )}
             </li>
           </ul>

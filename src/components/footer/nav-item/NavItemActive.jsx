@@ -4,7 +4,7 @@ const NavItemActive = ({ url, children }) => {
   return (
     <>
       <Link
-        href={"/"}
+        href={url}
         aria-disabled="true"
         tabIndex="-1"
         className="
