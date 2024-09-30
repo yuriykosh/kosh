@@ -1,5 +1,5 @@
-import ProjectsListMobile from "../projects/mobile/ProjectsList";
-import ProjectsListDesktop from "../projects/desktop/ProjectsList";
+import ProjectsListMobile from "./projects/mobile/ProjectsList";
+import ProjectsListDesktop from "./projects/desktop/ProjectsList";
 
 function Projects() {
   return (

@@ -1,4 +1,4 @@
-import HeroSection from "@/components/work/HeroSection";
+import HeroSection from "@/components/work-page/HeroSection";
 
 export default function Work() {
   return (

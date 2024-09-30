@@ -40,7 +40,7 @@ function ProjectsList() {
 
   return (
     <>
-      <div className="flex-grow hidden w-full lg:flex">
+      <div className="flex-grow hidden w-6/12 lg:flex">
         {hoveredProject && <ProjectImage project={hoveredProject} />}
       </div>
 

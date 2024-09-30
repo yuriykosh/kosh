@@ -1,4 +1,4 @@
-import ProjectItem from "../projects/mobile/ProjectsItem";
+import ProjectItem from "../home-page/projects/mobile/ProjectsItem";
 import eventPOSpic from "/public/projects/1.png";
 import budivelnykpic from "/public/projects/2.png";
 import dfpic from "/public/projects/3.png";
