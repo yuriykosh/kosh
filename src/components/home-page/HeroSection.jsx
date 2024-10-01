@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import koshPic from "/public/KOSH.webp";
-import homeBG from "/public/home-bg.webp";
 
 function Hero() {
   return (
@@ -55,15 +54,6 @@ function Hero() {
           </div>
         </div>
 
-        {/* <Image
-          src={homeBG}
-          quality={100}
-          loading="lazy"
-          placeholder="blur"
-          style={{ maxWidth: "100%", height: "auto" }}
-          alt="Background picture of concrete stairs"
-          className="fixed top-52 z-[-1] scale-150 md:scale-110 md:top-20 xl:scale-100"
-        /> */}
         <div className="fixed top-20 h-screen z-[-1] bg-red-300">
           <video
             className="object-cover w-full h-full mix-blend-darken"
