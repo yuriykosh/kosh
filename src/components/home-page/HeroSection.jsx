@@ -70,6 +70,7 @@ function Hero() {
             loop
             muted
             autoPlay
+            playsInline
           >
             <source src="/bubbles.mp4" />
           </video>
